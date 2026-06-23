@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANANAS Snapchat Audit</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,Arial,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+padding:30px;
+color:#1f2937;
+}
+
+.container{
+max-width:1400px;
+margin:auto;
+}
+
+.header{
+background:#111827;
+color:white;
+padding:30px;
+border-radius:20px;
+margin-bottom:25px;
+}
+
+.header h1{
+font-size:34px;
+margin-bottom:10px;
+}
+
+.kpis{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-bottom:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.card h3{
+font-size:14px;
+color:#6b7280;
+margin-bottom:10px;
+}
+
+.card .value{
+font-size:38px;
+font-weight:800;
+}
+
+.section{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+margin-bottom:25px;
+}
+
+.section h2{
+margin-bottom:20px;
+}
+
+.funnel{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.step{
+color:white;
+padding:18px;
+text-align:center;
+font-weight:700;
+border-radius:12px;
+}
+
+.impression{
+background:#2563eb;
+width:100%;
+}
+
+.click{
+background:#0891b2;
+width:70%;
+}
+
+.atc{
+background:#f59e0b;
+width:45%;
+}
+
+.purchase{
+background:#10b981;
+width:20%;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+table th{
+background:#111827;
+color:white;
+padding:15px;
+}
+
+table td{
+padding:15px;
+text-align:center;
+border-bottom:1px solid #e5e7eb;
+}
+
+.good{
+color:#10b981;
+font-weight:700;
+}
+
+.bad{
+color:#dc2626;
+font-weight:700;
+}
+
+.insight{
+padding:18px;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.success{
+background:#ecfdf5;
+border-left:5px solid #10b981;
+}
+
+.warning{
+background:#fff7ed;
+border-left:5px solid #f97316;
+}
+
+.danger{
+background:#fef2f2;
+border-left:5px solid #ef4444;
+}
+
+.forecast{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.forecast-card{
+background:#111827;
+color:white;
+padding:25px;
+border-radius:16px;
+text-align:center;
+}
+
+.forecast-card h3{
+margin-bottom:15px;
+}
+
+.forecast-card .num{
+font-size:34px;
+font-weight:800;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>📊 ANANAS Snapchat Audit Dashboard</h1>
+<p>Performance Analysis - Last 3 Months</p>
+</div>
+
+<div class="kpis">
+
+<div class="card">
+<h3>Total Spend</h3>
+<div class="value">9,568 SAR</div>
+</div>
+
+<div class="card">
+<h3>Total Revenue</h3>
+<div class="value">14,204 SAR</div>
+</div>
+
+<div class="card">
+<h3>Purchases</h3>
+<div class="value">70</div>
+</div>
+
+<div class="card">
+<h3>CPA</h3>
+<div class="value">137</div>
+</div>
+
+<div class="card">
+<h3>ROAS</h3>
+<div class="value">1.48</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🔻 Funnel Analysis</h2>
+
+<div class="funnel">
+
+<div class="step impression">
+697,604 Impressions
+</div>
+
+<div class="step click">
+3,763 Clicks
+<br>
+CTR = 0.54%
+</div>
+
+<div class="step atc">
+1,560 Add To Cart
+<br>
+41.4% Click → ATC
+</div>
+
+<div class="step purchase">
+70 Purchases
+<br>
+4.5% ATC → Purchase
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>📈 Monthly Performance</h2>
+
+<table>
+
+<tr>
+<th>Month</th>
+<th>Spend</th>
+<th>Revenue</th>
+<th>Purchases</th>
+<th>ROAS</th>
+</tr>
+
+<tr>
+<td>March</td>
+<td>2,274 SAR</td>
+<td>4,694 SAR</td>
+<td>25</td>
+<td class="good">2.06</td>
+</tr>
+
+<tr>
+<td>April</td>
+<td>4,063 SAR</td>
+<td>5,306 SAR</td>
+<td>25</td>
+<td class="bad">1.31</td>
+</tr>
+
+<tr>
+<td>May</td>
+<td>3,232 SAR</td>
+<td>4,205 SAR</td>
+<td>20</td>
+<td class="bad">1.30</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>🎯 Purchase Forecast</h2>
+
+<div class="forecast">
+
+<div class="forecast-card">
+<h3>1 Purchase</h3>
+<div class="num">53 Clicks</div>
+</div>
+
+<div class="forecast-card">
+<h3>10 Purchases</h3>
+<div class="num">530 Clicks</div>
+</div>
+
+<div class="forecast-card">
+<h3>30 Purchases</h3>
+<div class="num">1590 Clicks</div>
+</div>
+
+<div class="forecast-card">
+<h3>50 Purchases</h3>
+<div class="num">2650 Clicks</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🧠 Key Insights</h2>
+
+<div class="insight success">
+<b>Traffic Generation is Healthy</b><br>
+The account is generating sufficient traffic volume and Add To Cart events.
+</div>
+
+<div class="insight danger">
+<b>Main Bottleneck Found</b><br>
+Only 4.5% of Add To Cart users complete a purchase.
+95.5% drop-off after Add To Cart.
+</div>
+
+<div class="insight warning">
+<b>Scaling Warning</b><br>
+Increasing spend by 78% did not increase purchases.
+The issue is conversion efficiency, not traffic volume.
+</div>
+
+<div class="insight warning">
+<b>Priority Recommendation</b><br>
+Focus on Checkout Experience, Retargeting Campaigns, and Creative Refresh before increasing budgets.
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🚨 Final Audit Conclusion</h2>
+
+<p style="font-size:18px;line-height:1.8">
+
+Current performance is close to the historical average.
+
+The account's biggest issue is not traffic acquisition.
+
+The biggest growth opportunity lies between:
+
+<b>Add To Cart → Checkout → Purchase</b>
+
+Improving this stage will have a much larger impact than increasing ad spend.
+
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
